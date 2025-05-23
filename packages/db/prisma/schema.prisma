@@ -14,12 +14,13 @@ datasource db {
 }
 
 model User {
-  id       String @id @default(uuid())
-  email    String
-  passwoed String
-  photo    String
+  id       String  @id @default(uuid())
+  email    String  @unique
+  password String
+  photo    String?
   name     String
   room     Room[]
+  username String  @unique
 }
 
 model Room {

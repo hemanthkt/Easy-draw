@@ -1,8 +1,8 @@
 {
   "name": "@repo/backend-common",
   "version": "1.0.0",
-  "main": "index.js",
-  "exports": {
+  "main": "./dist/index.js",
+   "exports": {
     "./config": "./src/index.ts"
   },
   "scripts": {
